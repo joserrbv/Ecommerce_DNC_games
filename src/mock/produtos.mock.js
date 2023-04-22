@@ -7,6 +7,7 @@ export const mock=[
         descricao:"O Xbox Series X é um console de videogame da Microsoft de alta potência e desempenho, capaz de rodar jogos em 4K e 120 fps, com armazenamento de estado sólido e retrocompatibilidade.",
         detalhe:"",
         tipo:"",
+        cor: ["Black"],
     },
     {
         id:2,
@@ -16,6 +17,7 @@ export const mock=[
         descricao:"O Xbox Series S é um console de videogame da Microsoft, lançado em novembro de 2020. Ele oferece jogos em resolução 1440p.",
         detalhe:"",
         tipo:"",
+        cor: ["White"],
     },
     {
         id:3,
@@ -25,6 +27,7 @@ export const mock=[
         descricao:"O Nintendo Switch é um console de videogame híbrido lançado em 2017. Ele pode ser usado tanto como um console de mesa quanto como um console portátil.",
         detalhe:"",
         tipo:"",
+        cor: ["Black"],
     },
     {
         id:4,
@@ -34,6 +37,7 @@ export const mock=[
         descricao:" O jogo apresenta uma história épica, gráficos incríveis, combates intensos e um ambiente mitológico inspirado na mitologia nórdica.",
         detalhe:"",
         tipo:"",
+        cor: [""],
     },
     {
         id:5,
@@ -43,6 +47,7 @@ export const mock=[
         descricao:" Uncharted é uma série de jogos de ação e aventura em terceira pessoa que segue as aventuras do explorador Nathan Drake enquanto ele viaja pelo mundo em busca de tesouros e artefatos históricos.",
         detalhe:"",
         tipo:"",
+        cor: [""],
     },
     {
         id:6,
@@ -52,5 +57,6 @@ export const mock=[
         descricao:" Gran Turismo é uma franquia de jogos de corrida desenvolvida pela Polyphony Digital. Os jogos são conhecidos por sua simulação realista de corridas e por apresentar uma grande variedade de carros e pistas.",
         detalhe:"",
         tipo:"",
+        cor: [""],
     },
 ];

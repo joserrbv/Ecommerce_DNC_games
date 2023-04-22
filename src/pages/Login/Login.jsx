@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import logo from "../../assets/DncDetalhe.svg";
 import { Link } from 'react-router-dom';
+
 import './index.scss';
 
 
 const Login = () => {
+  
   const [cpf, setCpf] = useState('');
   const [password, setPassword] = useState('');
   const [cpfError, setCpfError] = useState('');
@@ -46,7 +48,6 @@ const Login = () => {
         setIsConfirmed(true);
         console.log('Login realizado com sucesso!');
         setIsSubmitted(true);
-        history.push('/'); //redireciona para a página Home
       }, 2000);
     } else {
       setIsSubmitted(true);

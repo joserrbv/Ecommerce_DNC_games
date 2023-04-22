@@ -6,7 +6,7 @@ import './index.scss';
 
 
 const Login = () => {
-  
+
   const [cpf, setCpf] = useState('');
   const [password, setPassword] = useState('');
   const [cpfError, setCpfError] = useState('');
@@ -37,7 +37,7 @@ const Login = () => {
     } else {
       setPasswordError('');
     }
-    
+
     if (cpfValidSubmit && !cpfError) {
       setCpfError('');
     }

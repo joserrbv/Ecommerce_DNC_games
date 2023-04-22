@@ -1,4 +1,4 @@
-// @use '../../sass/variable' as*;
+@use '../../sass/_variable' as *;
 
 .no-scroll {
     overflow: hidden;
@@ -73,12 +73,6 @@
         border-radius: 5px;
         width: 100%;
     }
-
-    // .login__success {
-    //     color: green;
-    //     font-weight: bold;
-    //     margin-top: 1rem;
-    // }
 
     .login__error {
         color: red;

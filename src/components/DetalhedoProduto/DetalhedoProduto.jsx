@@ -76,7 +76,7 @@ const DetalhedoProduto = ({ dados }) => {
         </div>   
     </div>
      
-      {/* termina 1 */}
+      {/*     termina 1     */}
 
       {/* inicia modal 2 */}
       

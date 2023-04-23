@@ -1,88 +1,120 @@
 
-// @use "../../sass/variables" as *;
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
-
 
 .Detalhedoproduto {
-  display: flex;
-  justify-content: space-evenly;
-
-  height: 600px;
-  align-items: center;
-
-  &_esquerdo {
-    width: 30%;
-    text-align: left;
-  p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    h4 {
-      color: #0c70f2;
-      font-size: 26px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-//     label {
-//       border-bottom: #0c70f2 3px solid;
-//     }
-
+    display: flex;
+    justify-content: space-evenly;
+  
+    height: 600px;
+    align-items: center;
+  
+    &_esquerdo {
+      width: 30%;
+      text-align: left;
     p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-// label {
-//     border-bottom: #0c70f2 3px solid;
-// }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  &_direito {
-    width: 60%;
-    height: 400px;
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  &_direito {
-    &_nome {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+      h4 {
+        color: #0c70f2;
+        font-size: 26px;
+      }
+  
       h2 {
-        text-align: left;
-        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  
+  //     label {
+  //       border-bottom: #0c70f2 3px solid;
+  //     }
+  
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+  // label {
+  //     border-bottom: #0c70f2 3px solid;
+  // }
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
     }
-
-    &_cor {
-      margin-bottom: 27px;
-      font-size: 24px;
-      line-height: 20px;
+  
+    &_direito {
+      width: 60%;
+      height: 400px;
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
     }
-
+  
+    &_direito {
+      &_nome {
+        h2 {
+          text-align: left;
+          font-size: 40px;
+        }
+      }
+  
+      &_cor {
+        margin-bottom: 27px;
+        font-size: 24px;
+        line-height: 20px;
+      }
+  
+      &_cubocor {
+        display: flex;
+        gap: 1rem;
+        border: 1px solid black;
+      }
+  
+      button {
+        margin-top: 50px;
+        border: none;
+        width: 510px;
+        height: 65px;
+        background-color: #0c70f2;
+        border-radius: 10px;
+        padding: 16px 10px 16px 10px;
+        margin-left: 5%;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .preco p {
+    font-size: 32px;
+    margin-bottom: 27px;
+    font-weight: 900;
+    margin-top: 27px;
+    font-family: "Inter", sans-serif;
+  }
+  .border-bottom {
+    border-bottom: #0c70f2 3px solid;
+  
     &_cubocor {
       display: flex;
       gap: 1rem;
       border: 1px solid black;
     }
-
+  
     button {
+      display: flex;
+      justify-content: center;
       margin-top: 50px;
       border: none;
       width: 510px;
@@ -90,48 +122,13 @@
       background-color: #0c70f2;
       border-radius: 10px;
       padding: 16px 10px 16px 10px;
+      gap: 20px;
+      align-items: center;
       margin-left: 5%;
-      color: #ffffff;
-      font-size: 25px;
-      line-height: 20px;
-      text-align: center;
-      font-weight: 700;
+  
     }
   }
-}
 
-.preco p {
-  font-size: 32px;
-  margin-bottom: 27px;
-  font-weight: 900;
-  margin-top: 27px;
-  font-family: "Inter", sans-serif;
-}
-.border-bottom {
-  border-bottom: #0c70f2 3px solid;
-
-  &_cubocor {
-    display: flex;
-    gap: 1rem;
-    border: 1px solid black;
-  }
-
-  button {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    border: none;
-    width: 510px;
-    height: 65px;
-    background-color: #0c70f2;
-    border-radius: 10px;
-    padding: 16px 10px 16px 10px;
-    gap: 20px;
-    align-items: center;
-    margin-left: 5%;
-
-  }
-}
 
 
 //  modal 1
@@ -261,6 +258,7 @@ h1 {
   }
   
 }
+
 
 button {
   width: 524px;

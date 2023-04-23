@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./index.scss";
-import carrinhoDir from '../../assets/carrinhoDir.svg'
+import carrinhoDir from "../../assets/carrinhoDir.svg";
 
 const DetalhedoProduto = ({ dados }) => {
   //   console.log(dados);
@@ -19,18 +19,11 @@ const DetalhedoProduto = ({ dados }) => {
           <h2>Descrição</h2>
 
           <label>{dados.descricao}</label>
-
-            
-
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
-
           <h2 className="border-bottom">{dados.nome}</h2>
-
-                   
-
         </div>
         <div className="preco">
           <p>{dados.preco}</p>

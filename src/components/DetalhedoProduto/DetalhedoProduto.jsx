@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./index.scss";
+import carrinhoDir from '../../assets/carrinhoDir.svg'
 
 const DetalhedoProduto = ({ dados }) => {
 //   console.log(dados);
@@ -13,15 +14,13 @@ const DetalhedoProduto = ({ dados }) => {
         </div>
         <div className="Detalhedoproduto__descricao">
           <h2>Descrição</h2>
-
-          <label>{dados.descricao}</label>
-          <h4>{dados.linha}</h4>
+          <label >{dados.descricao}</label> 
+          <label htmlFor=""></label>      
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
-          <h2>{dados.nome}</h2>
-          {/* <h1>{dados.linha}</h1> */}
+          <h2 id="linha">{dados.nome}</h2>          
         </div>
         <div className="Detalhedoproduto_direito_preco">
           <p>{dados.preco}</p>
@@ -66,6 +65,7 @@ const DetalhedoProduto = ({ dados }) => {
             }
           }}
         >
+          <img src={carrinhoDir} alt="" srcset="" />
           Adicionar ao Carrinho
         </button>
       </div>

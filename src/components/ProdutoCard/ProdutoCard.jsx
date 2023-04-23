@@ -8,7 +8,7 @@ export const ProdutoCard = ({dados}) => {
       <img src={dados.imagem} alt="model" />
       <div className='card__produto'>
         <p>{dados.nome}</p>
-        <button>
+        <button id='botaoCard'>
           <Link to={`/produto/${dados.id}`}>Ver Mais</Link>
         </button>
       </div>

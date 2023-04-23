@@ -3,14 +3,16 @@
 
 
 .card {
-//   background-color: $branco;
+  background-color: #ffffff;
+  //  $branco;
   width: 320px;
   height: 350px;
   border-radius: 12px;
   margin-bottom: 5ex;}
 .card{
 
-    // background-color: $branco;
+    background-color:#ffffff;
+    //  $branco;
 
     width: 320px;
     height: 350px;
@@ -45,9 +47,11 @@
     width: 128px;
     height: 24px;
     margin-top: 4%;
-    color: $branco;
+    color: #ffffff;
+    // $branco;
 
-    background: $cor-secundaria-site;
+    background:#0C70F2;
+    // $cor-secundaria-site;
   }
 
     p{
@@ -58,7 +62,8 @@
         line-height: 20px;
         text-align: center;
         padding: 10px;
-        // color: $cor-terciaria-site;
+        color: #252423;
+        // $cor-terciaria-site;
     }
 
 

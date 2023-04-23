@@ -85,10 +85,10 @@ const Login = () => {
           </div>
           {isSubmitted && isConfirmed ? (
             <Link to={`/Home/`}>
-              <button>Entrar</button>
+              <button id='buttonEntrar'>Entrar</button>
             </Link>
           ) : (
-            <button type="submit">Entrar</button>
+            <button id='buttonEntrar' type="submit">Entrar</button>
           )}
 
 

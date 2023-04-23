@@ -1,7 +1,7 @@
-@use '../../sass/variables' as *;
+// @use '../../sass/variables' as *;
 
 .card{
-    background-color: $branco;
+    // background-color: $branco;
     width: 320px;
     height: 350px;
     border-radius: 12px;
@@ -28,7 +28,7 @@
         line-height: 20px;
         text-align: center;
         padding: 10px;
-        color: $cor-terciaria-site;
+        // color: $cor-terciaria-site;
     }
 
     button{
@@ -41,14 +41,14 @@
         padding: 2px 35px;
         border-radius: 10px;
         border: none;
-        color: $branco;
+        // color: $branco;
 
-        background: $cor-secundaria-site;
+        // background: $cor-secundaria-site;
         
     }
 
     a{
         text-decoration: none;
-        color: $branco;
+        // color: $branco;
     }
 }

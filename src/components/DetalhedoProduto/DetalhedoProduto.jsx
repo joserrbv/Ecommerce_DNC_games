@@ -73,6 +73,53 @@ const DetalhedoProduto = ({ dados }) => {
 
       <div id="modal">
         <div id="modal_content">
+        <div className="left">
+            <img src={dados.imagem} alt="" style={{ marginTop: "10%" }} />
+          </div>
+          <div className="right">
+            <h2>Meu Carrinho</h2>
+
+            <h1>{dados.nome}</h1>
+
+            <p id="preco">{dados.preco}</p>
+
+            <h5>cor: {dados.cor}</h5>
+
+            <div className="Detalhedoproduto__cubocor">
+              {dados.cor.map((cor) => (
+                <div
+                  style={{
+                    width: "40px",
+                    height: "35px",
+                    borderRadius: "10px",
+                    backgroundColor: cor,
+                    border: "none ",
+                  }}
+                >
+                  {" "}
+                </div>
+              ))}
+            </div>
+            <div className="botoes">
+              <button className="botoes_one">
+                <Link to={`/home/`}> Continuar Comprando</Link>
+              </button>
+             
+               <button
+          onClick={() => {
+            console.log("click");
+            {
+              {
+                modalPay.style.display = "flex";
+              }
+            }
+          }}
+        >
+          Finalizar Compra
+        </button>
+            </div>
+          </div>
+       
         </div>   
     </div>
      

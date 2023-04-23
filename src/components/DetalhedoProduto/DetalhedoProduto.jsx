@@ -77,7 +77,7 @@ const DetalhedoProduto = ({ dados }) => {
             <img src={dados.imagem} alt="" style={{ marginTop: "10%" }} />
           </div>
           <div className="right">
-            <h2>Meu Carrinho</h2>
+            <h2 className="right_titulo">  Meu Carrinho </h2>
 
             <h1>{dados.nome}</h1>
 
@@ -105,7 +105,7 @@ const DetalhedoProduto = ({ dados }) => {
                 <Link to={`/home/`}> Continuar Comprando</Link>
               </button>
              
-               <button
+               <button className="botoes_one_two"
           onClick={() => {
             console.log("click");
             {

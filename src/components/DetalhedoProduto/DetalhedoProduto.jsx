@@ -3,7 +3,7 @@ import React from "react";
 import "./index.scss";
 
 const DetalhedoProduto = ({ dados }) => {
-//   console.log(dados);
+  //   console.log(dados);
   return (
     <div className="Detalhedoproduto">
       <div className="Detalhedoproduto_esquerdo">
@@ -73,13 +73,13 @@ const DetalhedoProduto = ({ dados }) => {
 
       <div id="modal">
         <div id="modal_content">
-        <div className="left">
+          <div className="left">
             <img src={dados.imagem} alt="" style={{ marginTop: "10%" }} />
           </div>
           <div className="right">
-            <h2 className="right_titulo">  Meu Carrinho </h2>
+            <h2 className="right_titulo"> Meu Carrinho </h2>
 
-            <h1>{dados.nome}</h1>
+            <h1 id="border-bottom">{dados.nome}</h1>
 
             <p id="preco">{dados.preco}</p>
 
@@ -104,31 +104,29 @@ const DetalhedoProduto = ({ dados }) => {
               <button className="botoes_one">
                 <Link to={`/home/`}> Continuar Comprando</Link>
               </button>
-             
-               <button className="botoes_one_two"
-          onClick={() => {
-            console.log("click");
-            {
-              {
-                modalPay.style.display = "flex";
-              }
-            }
-          }}
-        >
-          Finalizar Compra
-        </button>
+
+              <button
+                className="botoes_one_two"
+                onClick={() => {
+                  console.log("click");
+                  {
+                    {
+                      modalPay.style.display = "flex";
+                    }
+                  }
+                }}
+              >
+                Finalizar Compra
+              </button>
             </div>
           </div>
-       
-        </div>   
-    </div>
-     
+        </div>
+      </div>
+
       {/*     termina 1     */}
 
       {/* inicia modal 2 */}
-      
 
-       
       {/* inicia modal 2 */}
     </div>
   );

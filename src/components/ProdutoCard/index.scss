@@ -1,54 +1,53 @@
-@use '../../sass/variables' as *;
+@use "../../sass/variable" as *;
 
-.card{
-    background-color: $branco;
-    width: 320px;
-    height: 350px;
+.card {
+  background-color: $branco;
+  width: 320px;
+  height: 350px;
+  border-radius: 12px;
+  margin-bottom: 5ex;
+
+  img {
+    width: 100%;
     border-radius: 12px;
-    margin-bottom: 5ex;
+    padding-top: 2%;
+  }
 
-    img{
-        width: 100%;
-        border-radius: 12px;
-        padding-top: 2%;
-    }
+  &__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    &__produto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    color: $cor-terciaria-site;
+  }
 
-    p{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        padding: 10px;
-        color: $cor-terciaria-site;
-    }
+  button {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 2px 35px;
+    border-radius: 10px;
+    border: none;
+    color: $branco;
 
-    button{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        padding: 2px 35px;
-        border-radius: 10px;
-        border: none;
-        color: $branco;
+    background: $cor-secundaria-site;
+  }
 
-        background: $cor-secundaria-site;
-        
-    }
-
-    a{
-        text-decoration: none;
-        color: $branco;
-    }
+  a {
+    text-decoration: none;
+    color: $branco;
+  }
 }

@@ -1,24 +1,23 @@
-@use '../../sass/variables' as *;
+@use "../../sass/variable" as *;
 
-.home{
-    background-color: $cor-primaria-site;
+.home {
+  background-color: $cor-primaria-site;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+
+  &__propaganda {
     width: 100%;
-    margin: 0%;
-    padding: 0%;
-    
+  }
 
-    &__propaganda{
-        width: 100%;
-    }
-
-    &__conteiner{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4ex;
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        // padding: 40px;
-        width: 100%;
-    }
+  &__conteiner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4ex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    // padding: 40px;
+    width: 100%;
+  }
 }

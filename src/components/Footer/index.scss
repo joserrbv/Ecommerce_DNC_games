@@ -1,17 +1,17 @@
-@use '../../sass/variaveis' as*;
+@use "../../sass/variable" as *;
 
-.footer{
-    background-color: $cor-secundaria-site;
-    display: flex;
-    align-items: center;
-    padding: 15px 35px;
-    gap: 35px;
-    justify-content: flex-start;
+.footer {
+  background-color: $cor-secundaria-site;
+  display: flex;
+  align-items: center;
+  padding: 15px 35px;
+  gap: 35px;
+  justify-content: flex-start;
 
-    p{
-        color: $branco;
-    }
-    img{
-        width: 100px;
-    }
+  p {
+    color: $branco;
+  }
+  img {
+    width: 100px;
+  }
 }

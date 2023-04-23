@@ -1,50 +1,61 @@
+
 // @use "../../sass/variables" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+
 .Detalhedoproduto {
   display: flex;
   justify-content: space-evenly;
+
   height: 600px;
   align-items: center;
 
   &_esquerdo {
     width: 30%;
     text-align: left;
+  p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
 
-    
+    h4 {
+      color: #0c70f2;
+      font-size: 26px;
+    }
 
-p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 20px;
-}
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
 
-h4 {
-    color: #0c70f2;
-    font-size: 26px;
-    
-}
+    label {
+      border-bottom: #0c70f2 3px solid;
+    }
 
-h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
 
-label {
-    border-bottom: #0c70f2 3px solid;
-}
+    h4 {
+      color: #0c70f2;
+      font-size: 26px;
+    }
 
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
 
-
-
-
-}
-
-&_direito {
-    // background-color: red;
+  &_direito {
     width: 60%;
     height: 400px;
-
 
     h2 {
       margin-top: 30px;
@@ -57,7 +68,6 @@ label {
       h2 {
         text-align: left;
         font-size: 40px;
-
       }
     }
 
@@ -72,7 +82,6 @@ label {
       gap: 1rem;
       border: 1px solid black;
     }
-
 
     button {
       margin-top: 50px;
@@ -102,21 +111,42 @@ label {
 .border-bottom {
   border-bottom: #0c70f2 3px solid;
 
+  &_cubocor {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid black;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+    width: 510px;
+    height: 65px;
+    background-color: #0c70f2;
+    border-radius: 10px;
+    padding: 16px 10px 16px 10px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 5%;
+
+  }
 }
 
-//  modal 1
 
+//  modal 1
 
 #modal {
   position: absolute;
   top: 0%;
+
   height: 100%;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.7);
   display: none;
   align-self: center;
 }
-
 
 h1 {
   color: rgba(45, 45, 45, 1);
@@ -138,6 +168,7 @@ h1 {
   margin-left: 7.5%;
   gap: 2%;
   width: 80%;
+
   background-color: #ffffff;
 }
 
@@ -163,6 +194,7 @@ h1 {
     font-size: 24px;
   }
   &_two {
+
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -176,8 +208,76 @@ h1 {
     align-items: center;
     margin-left: 5%;
     font-size: 24px;
-    color: #ffffff;
+
   }
- 
-  //  modal 2
+}
+//  modal 2
+
+.modalPay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  background: rgba(217, 217, 217, 0.8);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    background: white;
+    width: 1200px;
+    height: 900px;
+    border-radius: 100px;
+    padding-top: 128px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form h1 {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(12, 112, 242, 1);
+    margin-bottom: 31px;
+  }
+  &__label {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 18px 0 12px 0;
+  }
+  &__input {
+    height: 52px;
+    width: 524px;
+    border-radius: 10px;
+  }
+  
+}
+
+button {
+  width: 524px;
+  margin-right: 10px;
+  border: none;
+  height: 63px;
+  // background-color: $cor-secundaria-site;
+  border-radius: 6px;
+  padding: 13px;
+  margin: 66px 0 200px 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  align-self: center;
+}
+a {
+  text-decoration: none;
+  
 }

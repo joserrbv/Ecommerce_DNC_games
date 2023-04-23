@@ -1,12 +1,10 @@
 @use "../../sass/variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 .Detalhedoproduto {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 600px;
   align-items: center;
-  font-family: "Raleway", sans-serif;
 
   &_esquerdo {
     width: 30%;
@@ -19,11 +17,6 @@
       line-height: 20px;
     }
 
-    h4 {
-      color: #0c70f2;
-      font-size: 26px;
-    }
-
     h2 {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -31,32 +24,11 @@
   }
 
   &_direito {
-    // background-color: red;
-    width: 50%;
-    height: 400px;
-
     &_nome {
-      text-align: center;
-
       h2 {
         text-align: left;
         font-size: 40px;
-        font-weight: normal;
-        border-bottom: #0c70f2 3px solid;
       }
-    }
-
-    h1 {
-      color: #0c70f2;
-      font-size: 37px;
-      text-align: left;
-    }
-
-    &_preco {
-      font-size: 32px;
-      margin-bottom: 27px;
-      font-weight: bold;
-      margin-top: 27px;
     }
 
     &_cor {
@@ -72,8 +44,6 @@
     }
 
     button {
-      display: flex;
-      justify-content: center;
       margin-top: 50px;
       border: none;
       width: 510px;
@@ -81,15 +51,8 @@
       background-color: #0c70f2;
       border-radius: 10px;
       padding: 16px 10px 16px 10px;
-      gap: 20px;
-      align-items: center;
       margin-left: 5%;
-    }
-
-    a {
-      text-decoration: none;
       color: #ffffff;
-      background-color: #0c70f2;
       font-size: 25px;
       line-height: 20px;
       text-align: center;
@@ -97,14 +60,23 @@
     }
   }
 }
+.preco p {
+  font-size: 32px;
+  margin-bottom: 27px;
+  font-weight: 900;
+  margin-top: 27px;
+  font-family: "Inter", sans-serif;
+}
+.border-bottom {
+  border-bottom: #0c70f2 3px solid;
+}
 
 //  modal 1
 
 #modal {
   position: absolute;
   top: 0%;
-
-  height: 145%;
+  height: 100%;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.7);
   display: none;
@@ -115,34 +87,22 @@ h1 {
   color: rgba(45, 45, 45, 1);
   margin-bottom: 40px;
 }
-
-#border-bottom {
-  border-bottom: #0c70f2 5px solid;
-}
-
 .right_titulo {
   color: rgba(12, 112, 242, 1);
   margin-bottom: 30px;
   font-size: 30px;
+  font-weight: 700;
 }
-
-h5 {
-  margin-bottom: 20px;
-}
-
 #modal #modal_content {
   display: flex;
+  position: relative;
+  bottom: 5%;
   border-radius: 100px;
-
   padding: 5% 0% 5% 5%;
   margin-top: 12%;
   margin-left: 7.5%;
   gap: 2%;
-
   width: 80%;
-  height: auto;
-  // margin: auto;
-
   background-color: #ffffff;
 }
 
@@ -165,35 +125,26 @@ h5 {
     align-items: center;
     margin-left: 5%;
     font-size: 24px;
-
-    &_two {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-      border: none;
-      width: 510px;
-      height: 65px;
-      background-color: #676767;
-      border-radius: 10px;
-      padding: 16px 10px 16px 10px;
-      gap: 20px;
-      align-items: center;
-      margin-left: 5%;
-      font-size: 24px;
-      color: #ffffff;
-    }
   }
+  &_two {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+    width: 510px;
+    height: 65px;
+    background-color: #676767;
+    border-radius: 10px;
+    padding: 16px 10px 16px 10px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  //  modal 2
 }
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#preco {
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 32px;
-}
-
-//  modal 2

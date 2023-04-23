@@ -11,19 +11,19 @@ const DetalhedoProduto = ({ dados }) => {
           <img src={dados.imagem} alt="" />
           <p>{dados.nome}</p>
         </div>
-        <div className="Detalhedoproduto__descricao">
+        <div
+          className="Detalhedoproduto__descricao, border-bottom"
+          style={{ paddingBottom: "10px" }}
+        >
           <h2>Descrição</h2>
-
           <label>{dados.descricao}</label>
-          <h4>{dados.linha}</h4>
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
-          <h2>{dados.nome}</h2>
-          {/* <h1>{dados.linha}</h1> */}
+          <h2 className="border-bottom">{dados.nome}</h2>
         </div>
-        <div className="Detalhedoproduto_direito_preco">
+        <div className="preco">
           <p>{dados.preco}</p>
         </div>
         <div className="Detalhedoproduto_direito_cor">
@@ -81,9 +81,19 @@ const DetalhedoProduto = ({ dados }) => {
 
             <h1 id="border-bottom">{dados.nome}</h1>
 
-            <p id="preco">{dados.preco}</p>
+            <p
+              style={{
+                fontSize: "32px",
+                marginBottom: "27px",
+                fontWeight: "900",
+                marginTop: "27px",
+                fontFamily: "Inter",
+              }}
+            >
+              {dados.preco}
+            </p>
 
-            <h5>cor: {dados.cor}</h5>
+            <h5>cor: {dados.cor} </h5>
 
             <div className="Detalhedoproduto__cubocor">
               {dados.cor.map((cor) => (
@@ -106,7 +116,7 @@ const DetalhedoProduto = ({ dados }) => {
               </button>
 
               <button
-                className="botoes_one_two"
+                className="botoes_two"
                 onClick={() => {
                   console.log("click");
                   {
@@ -127,7 +137,7 @@ const DetalhedoProduto = ({ dados }) => {
 
       {/* inicia modal 2 */}
 
-      {/* inicia modal 2 */}
+      {/* termina modal 2 */}
     </div>
   );
 };

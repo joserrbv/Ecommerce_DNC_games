@@ -1,14 +1,17 @@
-@use "../../sass/variable" as *;
+
+// @use '../../sass/variables' as *;
+
 
 .card {
-  background-color: $branco;
+//   background-color: $branco;
   width: 320px;
   height: 350px;
   border-radius: 12px;
   margin-bottom: 5ex;}
 .card{
-    background-color: white;
-    // $branco;
+
+    // background-color: $branco;
+
     width: 320px;
     height: 350px;
     border-radius: 12px;
@@ -27,16 +30,7 @@
     justify-content: center;
   }
 
-  p {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    padding: 10px;
-    color: $cor-terciaria-site;
-  }
+
 
   #botaoCard {
     font-family: "Raleway";
@@ -56,8 +50,23 @@
     background: $cor-secundaria-site;
   }
 
-  a {
-    text-decoration: none;
-    color: $branco;
-  }
+    p{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding: 10px;
+        // color: $cor-terciaria-site;
+    }
+
+
+   
+
+    a{
+        text-decoration: none;
+        // color: $branco;
+    }
 }
+

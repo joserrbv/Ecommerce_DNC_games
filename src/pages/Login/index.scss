@@ -54,7 +54,7 @@
     }
 
     &__input-wrapper {
-        max-width: 524px;
+        width: 524px;
         display: flex;
         flex-direction: column;
         row-gap: 12px;
@@ -81,15 +81,14 @@
         text-align: left;
     }
 
-    button {
+    #buttonEntrar {
         width: 524px;
         margin-right: 10px;
         border: none;
         background-color:#0C70F2;
         // $cor-secundaria-site;
         border-radius: 6px;
-        padding: 13px;
-        margin-top: 66px;
+        padding: 13px;        
         margin-bottom: 200px;
         font-size: 18px;
         font-weight: 800;

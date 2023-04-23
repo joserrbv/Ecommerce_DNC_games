@@ -1,8 +1,17 @@
-
-    p{
-        color: white;
-        // $branco;
-    }
-    img{
-        width: 100px;
+    .footer{
+        background-color: #0C70F2;
+        // $cor-secundaria-site;
+        display: flex;
+        align-items: center;
+        padding: 15px 35px;
+        gap: 35px;
+        justify-content: flex-start;
+    
+        p{
+            color: #ffffff;
+            // $branco;
+        }
+        img{
+            width: 100px;
+        }
     }

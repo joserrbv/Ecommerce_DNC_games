@@ -1,24 +1,35 @@
+
 // @use '../../sass/variables' as *;
 
+
+.card {
+  background-color: $branco;
+  width: 320px;
+  height: 350px;
+  border-radius: 12px;
+  margin-bottom: 5ex;}
 .card{
+
     // background-color: $branco;
+
     width: 320px;
     height: 350px;
     border-radius: 12px;
     margin-bottom: 5ex;
 
-    img{
-        width: 100%;
-        border-radius: 12px;
-        padding-top: 2%;
-    }
+  img {
+    width: 100%;
+    border-radius: 12px;
+    padding-top: 2%;
+  }
 
-    &__produto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  &__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 
     p{
         font-family: 'Raleway';
@@ -52,3 +63,4 @@
         // color: $branco;
     }
 }
+

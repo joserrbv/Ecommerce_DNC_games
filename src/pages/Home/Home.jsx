@@ -3,7 +3,7 @@ import '../Home/index.scss';
 import Nav from '../../components/Nav/Nav';
 import ProdutoCard from '../../components/ProdutoCard/ProdutoCard';
 import Footer from '../../components/Footer/Footer';
-import propaganda from '../../../public/propaganda.svg'
+import propaganda from '/propaganda.svg'
 
 
 

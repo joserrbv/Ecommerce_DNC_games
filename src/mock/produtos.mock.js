@@ -2,7 +2,7 @@ export const mock=[
     {
         id:1,
         nome:"Microsoft Xbox Series X | Preto",
-        preco:"R$ 4.999,00",
+        preco:"R$ 2.000,00",
         imagem:"/xboxX.svg",
         descricao:"O Xbox Series X é um console de videogame da Microsoft de alta potência e desempenho, capaz de rodar jogos em 4K e 120 fps, com armazenamento de estado sólido e retrocompatibilidade.",
         detalhe:"",

@@ -9,34 +9,26 @@
   &_esquerdo {
     width: 30%;
     text-align: left;
+  p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
 
+    h4 {
+      color: #0c70f2;
+      font-size: 26px;
+    }
 
-    
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
 
-p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-h4 {
-    color: #0c70f2;
-    font-size: 26px;
-    
-}
-
-h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-label {
-    border-bottom: #0c70f2 3px solid;
-}
-
-
-
+    label {
+      border-bottom: #0c70f2 3px solid;
+    }
 
     p {
       margin-top: 20px;
@@ -56,11 +48,9 @@ label {
     }
   }
 
-  &_direito {    
+  &_direito {
     width: 60%;
     height: 400px;
-
-
 
     h2 {
       margin-top: 30px;
@@ -73,7 +63,6 @@ label {
       h2 {
         text-align: left;
         font-size: 40px;
-
       }
     }
 
@@ -88,7 +77,6 @@ label {
       gap: 1rem;
       border: 1px solid black;
     }
-
 
     button {
       margin-top: 50px;
@@ -118,33 +106,29 @@ label {
 .border-bottom {
   border-bottom: #0c70f2 3px solid;
 
+  &_cubocor {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid black;
+  }
 
-    &_cubocor {
-      display: flex;
-      gap: 1rem;
-      border: 1px solid black;
-    }
-
-
-    button {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-      border: none;
-      width: 510px;
-      height: 65px;
-      background-color: #0c70f2;
-      border-radius: 10px;
-      padding: 16px 10px 16px 10px;
-      gap: 20px;
-      align-items: center;
-      margin-left: 5%;
-    }   
+  button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+    width: 510px;
+    height: 65px;
+    background-color: #0c70f2;
+    border-radius: 10px;
+    padding: 16px 10px 16px 10px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 5%;
+  }
 }
 
 //  modal 1
-
-
 
 #modal {
   position: absolute;
@@ -156,7 +140,6 @@ label {
   display: none;
   align-self: center;
 }
-
 
 h1 {
   color: rgba(45, 45, 45, 1);
@@ -187,7 +170,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
 
-
   &_one {
     display: flex;
     justify-content: center;
@@ -201,12 +183,24 @@ h1 {
     gap: 20px;
     align-items: center;
     margin-left: 5%;
-    color: $branco;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    
-    
+
+    font-size: 24px;
+  }
+  &_two {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+    width: 510px;
+    height: 65px;
+    background-color: #676767;
+    border-radius: 10px;
+    padding: 16px 10px 16px 10px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 24px;
 
 
 //  modal 2
@@ -277,4 +271,3 @@ h1 {
     color: $branco;
   }
 }
-

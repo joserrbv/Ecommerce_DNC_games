@@ -1,12 +1,4 @@
-
-
-@use "../../sass/variables" as *;
-
-
-
 .nav {
- 
-    // background-color: $cor-primaria-site;
     padding: 15px 25px;
     width: 90%;
     display: flex;
@@ -24,17 +16,15 @@
     margin-top: 5px;
   }
 
-
   ul {
 
     display: flex;
-    // margin-left: 13%;
+
     li {
       color: $branco;
       cursor: pointer;
       padding: 25px 6.5ex;
       list-style-type: none;
-
     }
   }
 

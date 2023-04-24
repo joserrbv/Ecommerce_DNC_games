@@ -1,12 +1,6 @@
-// @use '../../sass/variables' as *;
-
-
-// @use '../../sass/variables' as *;
-
 
 .card {
   background-color: #ffffff;
-  //  $branco;
   width: 320px;
   height: 350px;
   border-radius: 12px;
@@ -14,8 +8,6 @@
 .card{
 
     background-color: #ffffff;
-    // $branco;
-
     width: 320px;
     height: 350px;
     border-radius: 12px;
@@ -34,8 +26,6 @@
     justify-content: center;
   }
 
-
-
   #botaoCard {
     font-family: "Raleway";
     font-style: normal;
@@ -50,10 +40,7 @@
     height: 24px;
     margin-top: 4%;
     color: #ffffff;
-    // $branco;
-
     background:#0C70F2;
-    // $cor-secundaria-site;
   }
 
     p{
@@ -65,7 +52,6 @@
         text-align: center;
         padding: 10px;
         color: #252423;
-        // $cor-terciaria-site;
     }
 
 
@@ -80,18 +66,12 @@
         border-radius: 10px;
         border: none;
         color: #ffffff;
-        // $branco;
-
-        background: #0C70F2;
-        // $cor-secundaria-site;
-        
+        background: #0C70F2;        
     }
 
     a{
         text-decoration: none;
         color: #ffffff;
-        // $branco;
-
     }
 }
 

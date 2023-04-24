@@ -1,7 +1,5 @@
-@use '../../sass/variaveis' as*;
-
 .footer{
-    background-color: $cor-secundaria-site;
+    background-color: #0C70F2;
     display: flex;
     align-items: center;
     padding: 15px 35px;
@@ -9,7 +7,7 @@
     justify-content: flex-start;
 
     p{
-        color: $branco;
+        color: #fff;
     }
     img{
         width: 100px;

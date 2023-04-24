@@ -57,7 +57,7 @@ const DetalhedoProduto = ({ dados }) => {
         </div>
 
         <button
-          className="Detalhedoproduto_direito_button"
+          id="Detalhedoproduto_direito_button"
           type="button"
           onClick={() => {
             console.log("click");

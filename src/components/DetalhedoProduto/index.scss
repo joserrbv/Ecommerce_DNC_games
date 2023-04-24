@@ -13,42 +13,34 @@
     text-align: left;
 
     p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
 
-    h4 {
-      color: #0c70f2;
-      font-size: 26px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  &_direito {
-    width: 60%;
-    height: 400px;
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+      h4 {
+        color: #0c70f2;
+        font-size: 26px;
+      }
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
 
     }
   
@@ -81,8 +73,8 @@
         gap: 1rem;
         border: 1px solid black;
       }
-  
-      button {
+      
+      #Detalhedoproduto_direito_button {
         margin-top: 50px;
         border: none;
         width: 510px;

@@ -60,7 +60,7 @@ const Login = () => {
           <img src={logo} alt="" />
         </nav>
         <form className="login__form" onSubmit={handleSubmit}>
-          <h1>Acesse com seu login ou cadastre-se!</h1>
+          <h1 id='titulo_login'>Acesse com seu login ou cadastre-se!</h1>
           <h2>Você pode entrar com o seu CPF</h2>
           <div className="login__input-wrapper">
             <label htmlFor="cpf">Digite seu CPF:</label>
@@ -85,10 +85,10 @@ const Login = () => {
           </div>
           {isSubmitted && isConfirmed ? (
             <Link to={`/Home/`}>
-              <button>Entrar</button>
+              <button id='buttonEntrar'>Entrar</button>
             </Link>
           ) : (
-            <button type="submit">Entrar</button>
+            <button id='buttonEntrar' type="submit">Entrar</button>
           )}
 
 

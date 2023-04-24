@@ -276,25 +276,23 @@ h5 {
   display: none;
   position: absolute;
   top: 0%;
-  background: rgba(217, 217, 217, 0.8);
+  background: rgba(217, 217, 217, 0.7);
   width: 100%;
-  height: 100%;
+  height: 142%;
   align-items: center;
   justify-content: center;
 
   
     &__content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 80%;
+      height: 90%;
+      border-radius: 100px;
+      background-color: #ffffff;
+      padding-top: 10%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 5%;
-    background: white;
-    width: 1200px;
-    height: 900px;
-    border-radius: 100px;
-    padding-top: 128px;
   }
 
     &__form {
@@ -324,7 +322,7 @@ h5 {
   }
 
     &__input {
-
+    padding-left: 10px;
     height: 52px;
     width: 524px;
     border-radius: 10px;
@@ -333,20 +331,27 @@ h5 {
 }
 
   button {
-    width: 524px;
+    width: 439px;
     margin-right: 10px;
     border: none;
     height: 63px;
     background-color: #0C70F2;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 13px;
     margin: 66px 0 200px 0;
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
     align-self: center;
+    cursor: pointer;
+    
   }
     a {
     text-decoration: none;
     color: #ffffff;
+    letter-spacing: 3px;
+  }
+
+  #finalizarCompar {
+    text-align: left;
   }

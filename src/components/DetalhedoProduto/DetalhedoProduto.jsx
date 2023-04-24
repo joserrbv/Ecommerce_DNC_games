@@ -146,7 +146,7 @@ const DetalhedoProduto = ({ dados }) => {
       <div className="modalPay" id="modalPay">
         <div className="modalPay__content">
           <form className="modalPay__form">
-            <h1>Finalizar compra:</h1>
+            <h1 id="finalizarCompar">Finalizar compra:</h1>
             <label className="modalPay__label">Digite seu nome:</label>
             <input className="modalPay__input" type="text" placeholder="Nome completo" />
             <label className="modalPay__label">Digite seu CPF:</label>

@@ -68,7 +68,7 @@ const DetalhedoProduto = ({ dados }) => {
             }
           }}
         >
-          <img src={carrinhoDir} alt="" srcset="" />
+          <img id="carrinho" src={carrinhoDir} alt="" srcset="" />
           Adicionar ao Carrinho
         </button>
       </div>

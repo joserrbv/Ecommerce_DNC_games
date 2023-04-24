@@ -10,7 +10,7 @@ export const Nav = () => {
         <div className="nav__cart-shop">
           <img src={logo} alt="logo" className="nav__logo" />
           <img src={lupa} alt="search logo" className="nav__search-logo" />
-          <input type="text" placeholder="Search" />
+          <input id='pesquisa' type="text" placeholder="O que você está procurando?" />
           <img className='nav__carrinho' src={carrinho} alt="carrinho" />
         </div>
         

@@ -1,11 +1,10 @@
 
 .nav {
     background-color: #2D2D2D;
-    // padding: 15px 25px;
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    
 &__logo {
     width: 100px;
     height: 56px;
@@ -21,10 +20,7 @@
 
 .navegacao{
   ul {
-    display: flex;
-    justify-content: space-around;
-
-    li {
+      li {
       white-space: nowrap;
       font-size: 20px;
       color: #ffffff;
@@ -55,8 +51,8 @@
 
 
     ul{
-        display: flex;
-        margin-left: 13%;
+      display: flex;
+      justify-content: center;
         li{
             color:#ffffff;
             cursor: pointer;
@@ -73,7 +69,7 @@
     @media only screen and (max-width: 1200px) {
       &__search-logo {
         position: absolute;
-        left: 15%;
+        left: 20%;
         transform: translateY(95%);
     }
       }

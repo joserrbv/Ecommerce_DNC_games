@@ -24,7 +24,7 @@
         text-align: center;
     }
 
-    h1 {
+    #titulo_login {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
@@ -84,14 +84,15 @@
         background-color:#0C70F2;
         border-radius: 6px;
         padding: 13px;        
-        margin-bottom: 200px;
+        margin-bottom: 10%;
         font-size: 18px;
         font-weight: 800;
         line-height: 21px;
+        cursor: pointer;
+        color: #fff;
     }
 
     a {
         text-decoration: none;
-        color: white;
     }
 }

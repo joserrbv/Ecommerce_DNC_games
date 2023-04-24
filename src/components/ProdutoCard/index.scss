@@ -1,4 +1,4 @@
-// @use '../../sass/variables' as *;
+
 
 
 // @use '../../sass/variables' as *;
@@ -13,8 +13,7 @@
   margin-bottom: 5ex;}
 .card{
 
-    background-color: #ffffff;
-    // $branco;
+    background-color: #fff;
 
     width: 320px;
     height: 350px;
@@ -65,7 +64,7 @@
         text-align: center;
         padding: 10px;
         color: #252423;
-        // $cor-terciaria-site;
+
     }
 
 
@@ -79,18 +78,17 @@
         padding: 2px 35px;
         border-radius: 10px;
         border: none;
-        color: #ffffff;
-        // $branco;
 
+        color: #fff;
         background: #0C70F2;
-        // $cor-secundaria-site;
+
         
     }
 
     a{
         text-decoration: none;
-        color: #ffffff;
-        // $branco;
+
+        color: #fff;
 
     }
 }

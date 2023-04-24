@@ -14,9 +14,9 @@ export const Nav = () => {
           <img className='nav__carrinho' src={carrinho} alt="carrinho" />
         </div>
         
-        <div>
+        <div className='navegacao'>
           <ul>
-            <li>Novidades</li>
+            <li id='novidade'>Novidades</li>
             <li>Jogos</li>
             <li>Video Games</li>
             <li>Mesas Gamer</li>

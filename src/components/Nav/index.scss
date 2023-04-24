@@ -1,5 +1,6 @@
 
 .nav {
+
   background-color: #2D2D2D;
   padding: 15px 25px;
   width: 100%;
@@ -7,9 +8,11 @@
   flex-direction: column;
 
   &__logo {
+
     width: 150px;
     height: 76px;
     margin-top: 35px;
+
     margin-right: 25px;
     margin-left: 10%;
 
@@ -22,13 +25,16 @@
 
 
 .navegacao{
+
     ul {
+
     display: flex;
     li {
       color: #fff;
       margin-top: 2%;
       white-space: nowrap;
       font-size: 25px;
+
       cursor: pointer;
       list-style-type: none;
     }

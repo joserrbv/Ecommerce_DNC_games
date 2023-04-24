@@ -1,10 +1,11 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 
 
 .Detalhedoproduto {
   display: flex;
   justify-content: space-evenly;
-
   height: 600px;
   align-items: center;
 
@@ -12,43 +13,52 @@
     width: 30%;
     text-align: left;
 
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h4 {
+    color: #0c70f2;
+    font-size: 26px;
+    
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
     p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    h4 {
-      color: #0c70f2;
-      font-size: 26px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  &_direito {
-    width: 60%;
-    height: 400px;
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+      h4 {
+        color: #0c70f2;
+        font-size: 26px;
+      }
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  
+      p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
 
     }
   
@@ -81,8 +91,8 @@
         gap: 1rem;
         border: 1px solid black;
       }
-  
-      button {
+      
+      #Detalhedoproduto_direito_button {
         margin-top: 50px;
         border: none;
         width: 510px;
@@ -96,10 +106,14 @@
         line-height: 20px;
         text-align: center;
         font-weight: 700;
+      
       }
     }
   }
   
+  #carrinho {
+    margin-right: 5%;
+  }
   .preco p {
     font-size: 32px;
     margin-bottom: 27px;
@@ -108,6 +122,8 @@
     font-family: "Inter", sans-serif;
   }
   .border-bottom {
+    padding-bottom: 10px;
+    max-width: 600px;
     border-bottom: #0c70f2 3px solid;
   
     &_cubocor {
@@ -132,7 +148,6 @@
   
     }
   }
-}
 
 .preco p {
   font-size: 32px;
@@ -167,14 +182,12 @@
 
   }
 }
-
-
 //  modal 1
 
 #modal {
   position: absolute;
   top: 0%;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.7);
   display: none;
@@ -212,6 +225,7 @@ h5 {
   margin-left: 10%;
   gap: 2%;
   width: 80%;
+
   background-color: #ffffff;
 }
 
@@ -251,8 +265,11 @@ h5 {
     align-items: center;
     margin-left: 5%;
     font-size: 24px;
+    margin-bottom: 60px;
+    color: #ffffff;
   }
 }
+
 
 //  modal 2
 
@@ -260,31 +277,31 @@ h5 {
   display: none;
   position: absolute;
   top: 0%;
-  background: rgba(217, 217, 217, 0.8);
+  background: rgba(217, 217, 217, 0.7);
   width: 100%;
-  height: 100%;
+  height: 142%;
   align-items: center;
   justify-content: center;
 
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 5%;
-    background: white;
-    width: 1200px;
-    height: 900px;
-    border-radius: 100px;
-    padding-top: 128px;
+  
+    &__content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 80%;
+      height: 90%;
+      border-radius: 100px;
+      background-color: #ffffff;
+      padding-top: 10%;
+
   }
 
-  &__form {
+    &__form {
     display: flex;
     flex-direction: column;
   }
+    &__form h1 {
 
-  &__form h1 {
     font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
@@ -293,7 +310,9 @@ h5 {
     margin-bottom: 31px;
   }
 
-  &__label {
+
+    &__label {
+
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
@@ -303,7 +322,8 @@ h5 {
     margin: 18px 0 12px 0;
   }
 
-  &__input {
+    &__input {
+    padding-left: 10px;
     height: 52px;
     width: 524px;
     border-radius: 10px;
@@ -311,22 +331,30 @@ h5 {
 
 }
 
-button {
-  width: 524px;
-  margin-right: 10px;
-  border: none;
-  height: 63px;
-  color: #ffffff;
-  border-radius: 6px;
-  padding: 13px;
-  margin: 66px 0 12px 0;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px;
-  align-self: center;
-}
+  button {
+    width: 439px;
+    margin-right: 10px;
+    border: none;
+    height: 63px;
+    background-color: #0C70F2;
+    border-radius: 10px;
+    padding: 13px;
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
+    margin: 66px 0 20px 0;
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    align-self: center;
+    cursor: pointer;
+    
+  }
+    a {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 3px;
+  }
+
+  #finalizarCompar {
+    text-align: left;
+  }

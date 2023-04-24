@@ -7,15 +7,18 @@
   flex-direction: column;
 
   &__logo {
+    width: 100px;
+    height: 56px;
     margin-top: 7px;
     margin-right: 25px;
-    margin-left: 10%;
+
   }
 
   &__carrinho {
     width: 85px;
     margin-top: 5px;
   }
+
 
 .navegacao{
     ul {
@@ -32,8 +35,7 @@
 }
 
 #logodnc {
-  width: 100px;
-  height: 56px;
+  margin-left: 10%;
 }
 
 #novidade{
@@ -42,7 +44,7 @@
 
   &__search-logo {
     position: absolute;
-    left: 28.5%;
+    left: 32%;
     transform: translateY(95%);
   }
 

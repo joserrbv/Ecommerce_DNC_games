@@ -19,11 +19,13 @@ const DetalhedoProduto = ({ dados }) => {
           <h2>Descrição</h2>
 
           <label>{dados.descricao}</label>
+
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
           <h2 className="border-bottom">{dados.nome}</h2>
+
         </div>
         <div className="preco">
           <p>{dados.preco}</p>
@@ -33,12 +35,12 @@ const DetalhedoProduto = ({ dados }) => {
           {dados.cor.length === 1
             ? dados.cor.map((cor, index) => <span key={index}>{cor}</span>)
             : dados.cor.map((cor, index) =>
-                index + 1 === dados.cor.length ? (
-                  <span key={index}>{cor}</span>
-                ) : (
-                  <span key={index}>{cor}, </span>
-                )
-              )}
+              index + 1 === dados.cor.length ? (
+                <span key={index}>{cor}</span>
+              ) : (
+                <span key={index}>{cor}, </span>
+              )
+            )}
         </div>
         <div className="Detalhedoproduto__cubocor">
           {dados.cor.map((cor) => (
@@ -140,30 +142,30 @@ const DetalhedoProduto = ({ dados }) => {
 
       {/* inicia modal 2 */}
 
-      
+
       <div className="modalPay" id="modalPay">
-          <div className="modalPay__content">
-            <form className="modalPay__form">
-              <h1>Finalizar compra:</h1>
-              <label className="modalPay__label">Digite seu nome:</label>
-              <input className="modalPay__input" type="text" placeholder="Nome completo" />
-              <label className="modalPay__label">Digite seu CPF:</label>
-              <input className="modalPay__input" type="text" placeholder="CPF completo" />
-              <label className="modalPay__label">Endereço:</label>
-              <input className="modalPay__input" type="text" placeholder="*****" />
-              <label className="modalPay__label">Forma de Pagamento:</label>
-              <input className="modalPay__input" type="text" placeholder="*****" />
-              <button type="submit">
-                <Link to={"/home"}>Confirmar Pedido</Link>
-              </button>
-            </form>
-          </div>
+        <div className="modalPay__content">
+          <form className="modalPay__form">
+            <h1>Finalizar compra:</h1>
+            <label className="modalPay__label">Digite seu nome:</label>
+            <input className="modalPay__input" type="text" placeholder="Nome completo" />
+            <label className="modalPay__label">Digite seu CPF:</label>
+            <input className="modalPay__input" type="text" placeholder="CPF completo" />
+            <label className="modalPay__label">Endereço:</label>
+            <input className="modalPay__input" type="text" placeholder="*****" />
+            <label className="modalPay__label">Forma de Pagamento:</label>
+            <input className="modalPay__input" type="text" placeholder="*****" />
+            <button type="submit">
+              <Link to={"/home"}>Confirmar Pedido</Link>
+            </button>
+          </form>
         </div>
-       
-      
+      </div>
 
 
-     
+
+
+
 
     </div>
   );

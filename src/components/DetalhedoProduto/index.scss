@@ -1,16 +1,41 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 
 
 .Detalhedoproduto {
   display: flex;
   justify-content: space-evenly;
-
   height: 600px;
   align-items: center;
 
   &_esquerdo {
     width: 30%;
     text-align: left;
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h4 {
+    color: #0c70f2;
+    font-size: 26px;
+    
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+label {
+    border-bottom: #0c70f2 3px solid;
+}
+
+
 
     p {
         margin-top: 20px;
@@ -206,7 +231,6 @@ h5 {
   margin-left: 10%;
   gap: 2%;
   width: 80%;
-
   background-color: #ffffff;
 }
 
@@ -246,9 +270,13 @@ h5 {
     align-items: center;
     margin-left: 5%;
     font-size: 24px;
+
+  
+
     margin-bottom: 60px;
   }
 }
+
 
 //  modal 2
 
@@ -262,7 +290,9 @@ h5 {
   align-items: center;
   justify-content: center;
 
-  &__content {
+  
+    &__content {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,12 +305,12 @@ h5 {
     padding-top: 128px;
   }
 
-  &__form {
+    &__form {
     display: flex;
     flex-direction: column;
   }
+    &__form h1 {
 
-  &__form h1 {
     font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
@@ -289,7 +319,9 @@ h5 {
     margin-bottom: 31px;
   }
 
-  &__label {
+
+    &__label {
+
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
@@ -299,7 +331,8 @@ h5 {
     margin: 18px 0 12px 0;
   }
 
-  &__input {
+    &__input {
+
     height: 52px;
     width: 524px;
     border-radius: 10px;
@@ -307,22 +340,23 @@ h5 {
 
 }
 
-button {
-  width: 524px;
-  margin-right: 10px;
-  border: none;
-  height: 63px;
-  color: #ffffff;
-  border-radius: 6px;
-  padding: 13px;
-  margin: 66px 0 12px 0;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px;
-  align-self: center;
-}
+  button {
+    width: 524px;
+    margin-right: 10px;
+    border: none;
+    height: 63px;
+    background-color: #0C70F2;
+    border-radius: 6px;
+    padding: 13px;
+    margin: 66px 0 200px 0;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    align-self: center;
+  }
+    a {
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
 }

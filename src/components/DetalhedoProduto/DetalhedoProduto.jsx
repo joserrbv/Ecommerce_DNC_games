@@ -83,7 +83,6 @@ const DetalhedoProduto = ({ dados }) => {
             <h2 className="right_titulo"> Meu Carrinho </h2>
 
             <h1 id="border-bottom">{dados.nome}</h1>
-
             <p
               style={{
                 fontSize: "32px",
@@ -135,12 +134,10 @@ const DetalhedoProduto = ({ dados }) => {
           </div>
         </div>
       </div>
-
       {/*     termina 1     */}
 
       {/* inicia modal 2 */}
 
-      
       <div className="modalPay" id="modalPay">
           <div className="modalPay__content">
             <form className="modalPay__form">
@@ -159,12 +156,6 @@ const DetalhedoProduto = ({ dados }) => {
             </form>
           </div>
         </div>
-       
-      
-
-
-     
-
     </div>
   );
 };

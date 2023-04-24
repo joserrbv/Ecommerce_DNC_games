@@ -1,6 +1,5 @@
 
 .nav {
-
   background-color: #2D2D2D;
   padding: 15px 25px;
   width: 100%;
@@ -8,10 +7,7 @@
   flex-direction: column;
 
   &__logo {
-    width: 100px;
-    height: 56px;
     margin-top: 7px;
-
     margin-right: 25px;
     margin-left: 10%;
   }
@@ -20,7 +16,6 @@
     width: 85px;
     margin-top: 5px;
   }
-
 
 .navegacao{
     ul {
@@ -34,6 +29,11 @@
       list-style-type: none;
     }
   }
+}
+
+#logodnc {
+  width: 100px;
+  height: 56px;
 }
 
 #novidade{

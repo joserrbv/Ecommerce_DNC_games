@@ -13,7 +13,6 @@
     text-align: left;
 
     p {
-
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 20px;
@@ -100,6 +99,8 @@
     font-family: "Inter", sans-serif;
   }
   .border-bottom {
+    padding-bottom: 10px;
+    max-width: 600px;
     border-bottom: #0c70f2 3px solid;
   
     &_cubocor {
@@ -124,7 +125,6 @@
   
     }
   }
-}
 
 .preco p {
   font-size: 32px;

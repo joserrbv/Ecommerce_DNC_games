@@ -9,7 +9,7 @@ const DetalhedoProduto = ({ dados }) => {
     <div className="Detalhedoproduto">
       <div className="Detalhedoproduto_esquerdo">
         <div className="Detalhedoproduto__card">
-          <img src={dados.imagem} alt="" />
+          <img id="imagemTopo" src={dados.imagem} alt="" />
           <p>{dados.nome}</p>
         </div>
         <div

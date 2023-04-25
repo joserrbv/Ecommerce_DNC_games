@@ -40,8 +40,8 @@ Ao final do projeto, foi feito o murge de todas as branchs para a branch master.
 
 ### Colabroadores
 
-@Alcemaia (Alcenizia Maia)
-@Giva04 (Givanildo Gomes)
-@joserrbv ( Jose Queiroz)
-@RodrigoSampaio250 (Rodrigo)
-@gyok159gui (Guilherme)
+@Alcemaia (Alcenizia Maia)     RID: 90653
+@Giva04 (Givanildo Gomes)      RID: 89842
+@joserrbv ( Jose Queiroz)      RID: 62681
+@RodrigoSampaio250 (Rodrigo)   RID: 90185
+@gyok159gui (Guilherme)        RID: 78834

@@ -8,8 +8,8 @@ export const Nav = () => {
   return (
     <div className='nav'>
         <div className="nav__cart-shop">
-          <img src={logo} alt="logo" className="nav__logo" />
-          <img src={lupa} alt="search logo" className="nav__search-logo" />
+          <img id='logodnc' src={logo} alt="logo" className="c" />
+          <img id='lupa' src={lupa} alt="search logo" className="nav__search-logo" />
           <input id='pesquisa' type="text" placeholder="O que você está procurando?" />
           <img className='nav__carrinho' src={carrinho} alt="carrinho" />
         </div>

@@ -8,12 +8,14 @@
   flex-direction: column;
 
   &__logo {
-    width: 100px;
-    height: 56px;
-    margin-top: 7px;
+
+    width: 150px;
+    height: 76px;
+    margin-top: 35px;
 
     margin-right: 25px;
     margin-left: 10%;
+
   }
 
   &__carrinho {
@@ -23,19 +25,24 @@
 
 
 .navegacao{
-   ul {
+
+    ul {
+
     display: flex;
     li {
       color: #fff;
       margin-top: 2%;
       white-space: nowrap;
       font-size: 25px;
-      
 
       cursor: pointer;
       list-style-type: none;
     }
   }
+}
+
+#logodnc {
+  margin-left: 10%;
 }
 
 #novidade{
@@ -44,7 +51,7 @@
 
   &__search-logo {
     position: absolute;
-    left: 28.5%;
+    left: 32%;
     transform: translateY(95%);
   }
 
@@ -71,7 +78,7 @@
     }
 
     &__search-logo {
-      margin-top: 3.5%;
+      margin-top: 3.2%;
         position: absolute;
         transform: translateY(95%);
     }

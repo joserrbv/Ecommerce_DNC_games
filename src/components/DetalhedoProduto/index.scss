@@ -9,9 +9,17 @@
   height: 600px;
   align-items: center;
 
+  #imagemTopo {
+    margin-left: -40px;
+
+  }
+
   &_esquerdo {
-    width: 30%;
+    width: 40%;
     text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 400px;
 
 p {
     margin-top: 20px;
@@ -63,7 +71,7 @@ h2 {
     }
   
     &_direito {
-      width: 60%;
+      width: 45%;
       height: 400px;
   
       h2 {
@@ -187,7 +195,7 @@ h2 {
 #modal {
   position: absolute;
   top: 0%;
-  height: 142%;
+  height: 120%;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.7);
   display: none;
@@ -266,6 +274,7 @@ h5 {
     margin-left: 5%;
     font-size: 24px;
     margin-bottom: 60px;
+    color: #ffffff;
   }
 }
 
@@ -338,7 +347,9 @@ h5 {
     background-color: #0C70F2;
     border-radius: 10px;
     padding: 13px;
-    margin: 66px 0 12px 0;
+
+    margin: 66px 0 20px 0;
+
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;

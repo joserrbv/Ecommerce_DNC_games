@@ -19,7 +19,7 @@ const DetalhedoProduto = ({ dados }) => {
     <div className="Detalhedoproduto">
       <div className="Detalhedoproduto_esquerdo">
         <div className="Detalhedoproduto__card">
-          <img src={dados.imagem} alt="" />
+          <img id="imagemTopo" src={dados.imagem} alt="" />
           <p>{dados.nome}</p>
         </div>
         <div
@@ -93,7 +93,6 @@ const DetalhedoProduto = ({ dados }) => {
             <h2 className="right_titulo"> Meu Carrinho </h2>
 
             <h1 id="border-bottom">{dados.nome}</h1>
-
             <p
               style={{
                 fontSize: "32px",
@@ -145,7 +144,6 @@ const DetalhedoProduto = ({ dados }) => {
           </div>
         </div>
       </div>
-
       {/*     termina 1     */}
 
       {/* inicia modal 2 */}
@@ -203,7 +201,13 @@ const DetalhedoProduto = ({ dados }) => {
             <button className="botoes_one">Confirmar Compra</button>
           </form>
         </div>
-      </div>
+      </div> 
+
+
+
+
+
+
     </div>
   );
 };

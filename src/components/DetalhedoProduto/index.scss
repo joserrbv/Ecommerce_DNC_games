@@ -6,7 +6,7 @@
 .Detalhedoproduto {
   display: flex;
   justify-content: space-evenly;
-  height: 600px;
+  height: 900px;
   align-items: center;
 
   #imagemTopo {
@@ -18,8 +18,9 @@
     width: 40%;
     text-align: left;
     margin-right: 5%;
-    margin-left: 5%;
-    max-width: 400px;
+
+    margin-left: 10%;
+
 
 p {
     margin-top: 20px;
@@ -195,9 +196,9 @@ h2 {
 #modal {
   position: absolute;
   top: 0%;
-  height: 120%;
+  height: 183%;
   width: 100%;
-  background-color: rgba(217, 217, 217, 0.7);
+  background-color: rgba(58, 48, 48, 0.7);
   display: none;
   align-self: center;
 }
@@ -229,10 +230,11 @@ h5 {
   bottom: 5%;
   border-radius: 100px;
   padding: 5% 0% 5% 5%;
-  margin-top: 7%;
+  margin-top: 25%;
   margin-left: 10%;
   gap: 2%;
   width: 80%;
+  height: 75%;
 
   background-color: #ffffff;
 }

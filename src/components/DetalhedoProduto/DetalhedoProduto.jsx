@@ -5,9 +5,13 @@ import carrinhoDir from "../../assets/carrinhoDir.svg";
 import { useForm } from "react-hook-form";
 
 const DetalhedoProduto = ({ dados }) => {
-
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = dados => console.log(dados);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (dados) => console.log(dados);
 
   console.log(watch("dados")); // watch input value by passing the name of it
   //   console.log(dados);
@@ -25,13 +29,11 @@ const DetalhedoProduto = ({ dados }) => {
           <h2>Descrição</h2>
 
           <label>{dados.descricao}</label>
-
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
           <h2 className="border-bottom">{dados.nome}</h2>
-
         </div>
         <div className="preco">
           <p>{dados.preco}</p>
@@ -41,12 +43,12 @@ const DetalhedoProduto = ({ dados }) => {
           {dados.cor.length === 1
             ? dados.cor.map((cor, index) => <span key={index}>{cor}</span>)
             : dados.cor.map((cor, index) =>
-              index + 1 === dados.cor.length ? (
-                <span key={index}>{cor}</span>
-              ) : (
-                <span key={index}>{cor}, </span>
-              )
-            )}
+                index + 1 === dados.cor.length ? (
+                  <span key={index}>{cor}</span>
+                ) : (
+                  <span key={index}>{cor}, </span>
+                )
+              )}
         </div>
         <div className="Detalhedoproduto__cubocor">
           {dados.cor.map((cor) => (
@@ -148,79 +150,60 @@ const DetalhedoProduto = ({ dados }) => {
 
       {/* inicia modal 2 */}
 
-<div className="modalPay" id="modalPay">
+      <div className="modalPay" id="modalPay">
         <div className="modalPay__content">
-
-        <form onSubmit={handleSubmit(onSubmit)} className="modalPay__form" > 
-      
-        <h1 id="finalizarCompar">Finalizar compra:</h1>
-        <label className="modalPay__label">Digite seu nome:</label>
-      <input placeholder="Digite seu nome" {...register("firstName", { required: true, minLength: 3, maxLength: 50 })} className="modalPay__input" />
-
-      <label className="modalPay__label">Digite seu CPF:</label>
-      <input placeholder="Digite seu CPF" type="text" {...register("CPF", {required: true, pattern: (/^(\d{3}\.){2}\d{3}\-\d{2}$/) })}  className="modalPay__input"/>
-
-      <label className="modalPay__label">Endereço:</label>
-      <input  placeholder="**********************" {...register("address", { required: true, minLength: 10, maxLength: 50 })} className="modalPay__input" />
-     
-
-      <label className="modalPay__label">Forma de Pagamento:</label>
-      <input placeholder="**********************" {...register("payment", { required: true, minLength: 6, maxLength: 20 })} className="modalPay__input" />
-      
-      {errors.exampleRequired && <span>Campo Obrigatório</span>}
-
-
-      <button className="botoes_one">
-                Confirmar Compra
-      </button> 
-      
-
-      
-     
-
-
-
-
-</form>
-
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-      {/* <div className="modalPay" id="modalPay">
-        <div className="modalPay__content">
-          <form className="modalPay__form">
+          <form onSubmit={handleSubmit(onSubmit)} className="modalPay__form">
             <h1 id="finalizarCompar">Finalizar compra:</h1>
             <label className="modalPay__label">Digite seu nome:</label>
-            <input className="modalPay__input" type="text" placeholder="Nome completo" />
+            <input
+              placeholder="Digite seu nome"
+              {...register("firstName", {
+                required: true,
+                minLength: 3,
+                maxLength: 50,
+              })}
+              className="modalPay__input"
+            />
+
             <label className="modalPay__label">Digite seu CPF:</label>
-            <input className="modalPay__input" type="text" placeholder="CPF completo" />
+            <input
+              placeholder="Digite seu CPF"
+              type="text"
+              {...register("CPF", {
+                required: true,
+                pattern: /^(\d{3}\.){2}\d{3}\-\d{2}$/,
+              })}
+              className="modalPay__input"
+            />
+
             <label className="modalPay__label">Endereço:</label>
-            <input className="modalPay__input" type="text" placeholder="*****" />
+            <input
+              placeholder="**********************"
+              {...register("address", {
+                required: true,
+                minLength: 10,
+                maxLength: 50,
+              })}
+              className="modalPay__input"
+            />
+
             <label className="modalPay__label">Forma de Pagamento:</label>
-            <input className="modalPay__input" type="text" placeholder="*****" />
-            <button type="submit">
-              <Link to={"/home"}>Confirmar Pedido</Link>
-            </button>
+            <input
+              placeholder="**********************"
+              {...register("payment", {
+                required: true,
+                minLength: 6,
+                maxLength: 20,
+              })}
+              className="modalPay__input"
+            />
+
+            {errors.exampleRequired && <span>Campo Obrigatório</span>}
+
+            <button className="botoes_one">Confirmar Compra</button>
           </form>
         </div>
-      </div> */}
-
-
-
-
-
-
+      </div>
     </div>
   );
 };

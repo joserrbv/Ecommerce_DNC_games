@@ -94,7 +94,7 @@ const Login = () => {
 
         </form>
         {isConfirmed && (
-          <p>Login realizado com sucesso!</p>
+          <p id="sucess">Login realizado com sucesso!</p>
         )}
       </section>
     </div>

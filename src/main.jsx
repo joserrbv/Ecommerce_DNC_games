@@ -8,12 +8,21 @@ import  Login  from './pages/Login/Login';
 import  Pay from './pages/Pay/Pay';
 import  Home  from './pages/Home/Home';
 import Produto from './pages/Produto/Produto';
+import Cadastro from './pages/Cadastro/Cadastro';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro/>,
   },
    {
      path: "/home",

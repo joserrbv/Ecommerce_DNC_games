@@ -88,7 +88,7 @@ const Login = () => {
           )}
         </form>
         <div className="CreateAcount">
-          <p>Ainda não tem cadastro? <a href="http://google.com">Criar Conta</a></p>
+        <p>Ainda não tem cadastro?</p> <Link to={`/Cadastro/`}>Criar Conta </Link>
         </div>
       </section>
     </div>

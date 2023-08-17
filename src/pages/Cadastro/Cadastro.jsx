@@ -7,17 +7,17 @@ export const Cadastro = () => {
     <div className='cadastro'>
         <h1>Faça seu cadastro</h1>
         <form action="">
-            <div className="one">
+            <div className="cadastro_one">
             <label htmlFor="">Nome completo</label>
             <input type="text" />
             </div>
 
-            <div className="two">
+            <div className="cadastro_one">
             <label htmlFor="">Usuário</label>
             <input type="text" />
             </div>
 
-            <div className="three">
+            <div className="cadastro_one">
             <label htmlFor="">senha</label>
             <input type="text" />
             </div>

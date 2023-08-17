@@ -7,9 +7,9 @@ import './index.scss';
 
 const Login = () => {
 
-  const [cpf, setCpf] = useState('');
+  const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
-  const [cpfError, setCpfError] = useState('');
+  const [usuarioError, setUsuarioError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -17,18 +17,15 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let cpfValidSubmit = true;
+    let usuarioValidSubmit = true;
     let passwordValidSubmit = true;
 
 
-    if (cpf.trim() === '') {
-      setCpfError('Por favor, insira seu CPF.');
-      cpfValidSubmit = false;
-    } else if (!/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(cpf)) {
-      setCpfError('Por favor, insira um CPF válido.');
-      cpfValidSubmit = false;
+    if (usuario.trim() === '') {
+      setUsuarioError('Por favor, insira seu USUARIO.');
+      usuarioValidSubmit = false;
     } else {
-      setCpfError('');
+      setUsuarioError('');
     }
 
     if (password.trim() === '') {
@@ -38,11 +35,11 @@ const Login = () => {
       setPasswordError('');
     }
 
-    if (cpfValidSubmit && !cpfError) {
-      setCpfError('');
+    if (usuarioValidSubmit && !usuarioError) {
+      setUsuarioError('');
     }
 
-    if (cpfValidSubmit && passwordValidSubmit) {
+    if (usuarioValidSubmit && passwordValidSubmit) {
       setIsConfirmed(true);
       setTimeout(() => {
         setIsConfirmed(true);
@@ -61,18 +58,17 @@ const Login = () => {
         </nav>
         <form className="login__form" onSubmit={handleSubmit}>
           <h1 id='titulo_login'>Acesse com seu login ou cadastre-se!</h1>
-          <h2>Você pode entrar com o seu CPF</h2>
+          <h2>Você pode entrar com o seu Usuário</h2>
           <div className="login__input-wrapper">
-            <label htmlFor="cpf">Digite seu CPF:</label>
+            <label htmlFor="usuario">Digite seu Usuário</label>
             <input
-              type="text"
-              placeholder="000.000.000-00"
-              id="cpf"
+              type="text"              
+              id="usuario"
               className="login__input-name"
-              value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
+              value={usuario}
+              onChange={(e) => setUsuario(e.target.value)}
             />
-            {cpfError && <p className="login__error">{cpfError}</p>}
+            {usuarioError && <p className="login__error">{usuarioError}</p>}
             <label htmlFor="password">Senha:</label>
             <input
               type="password"

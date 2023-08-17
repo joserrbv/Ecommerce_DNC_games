@@ -86,12 +86,10 @@ const Login = () => {
           ) : (
             <button id='buttonEntrar' type="submit">Entrar</button>
           )}
-
-
         </form>
-        {isConfirmed && (
-          <p id="sucess">Login realizado com sucesso!</p>
-        )}
+        <div className="CreateAcount">
+          <p>Ainda não tem cadastro? <a href="http://google.com">Criar Conta</a></p>
+        </div>
       </section>
     </div>
   );

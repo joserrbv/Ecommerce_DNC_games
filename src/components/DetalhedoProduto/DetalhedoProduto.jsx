@@ -13,6 +13,14 @@ const DetalhedoProduto = ({ dados }) => {
   } = useForm();
   const onSubmit = (dados) => console.log(dados);
 
+  function clickbtnAddCar() {
+
+    //logo será feita uma verificação de o usuário está logado
+
+    modal.style.display = "block";
+
+  }
+
   console.log(watch("dados")); // watch input value by passing the name of it
   //   console.log(dados);
   return (
@@ -69,14 +77,7 @@ const DetalhedoProduto = ({ dados }) => {
         <button
           id="Detalhedoproduto_direito_button"
           type="button"
-          onClick={() => {
-            console.log("click");
-            {
-              {
-                modal.style.display = "block";
-              }
-            }
-          }}
+          onClick={() => {clickbtnAddCar();}}
         >
           <img id="carrinho" src={carrinhoDir} alt="" srcset="" />
           Adicionar ao Carrinho

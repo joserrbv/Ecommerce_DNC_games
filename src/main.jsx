@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import './index.scss';
-import { mock } from './mock/produtos.mock';
 import  Carrinho  from './pages/Carrinho/Carrinho';
 import  Login  from './pages/Login/Login';
 import  Pay from './pages/Pay/Pay';
@@ -14,7 +13,7 @@ import Cadastro from './pages/Cadastro/Cadastro';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <Home />,
   },
   {
     path: "/login",
@@ -25,20 +24,20 @@ const router = createBrowserRouter([
     element: <Cadastro/>,
   },
    {
-     path: "/home",
-     element: <Home dados={mock}/>,
+     path: "/loja",
+     element: <Home />,
    },
   {
     path: "/produto/:produtoId",
-    element: <Produto dados={mock}/>,
+    element: <Produto />,
   },
   {
     path: "/carrinho/:carrinhoId",
-    element: <Carrinho dados={mock}/>,
+    element: <Carrinho />,
   },
   {
     path: "/pay/:payId",
-    element: <Pay dados={mock}/>,
+    element: <Pay />,
   },
 ]);
 

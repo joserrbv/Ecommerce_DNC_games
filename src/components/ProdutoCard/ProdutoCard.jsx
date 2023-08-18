@@ -2,14 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../ProdutoCard/index.scss';
 
-export const ProdutoCard = ({dados}) => {
+export const ProdutoCard = ({produto}) => {
   return (
     <div className='card'>
-      <img src={dados.imagem} alt="model" />
+      <img src={produto.image} alt="model" className='img-produto'/>
       <div className='card__produto'>
-        <p>{dados.nome}</p>
+        <p>{produto.title}</p>
         <button id='botaoCard'>
-          <Link to={`/produto/${dados.id}`}>Ver Mais</Link>
+          <Link to={`/produto/${produto.id}`}>Ver Mais</Link>
         </button>
       </div>
     </div>

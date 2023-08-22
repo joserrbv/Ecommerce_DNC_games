@@ -11,16 +11,33 @@ import propaganda from '/propaganda.svg'
 export const Home = () => {
 
   const [produtos, setProdutos] = useState([]);
+  const [error, setError] = useState(null)
 
   useEffect(()=>{
   
 
     (async()=>{
 
-      const resApiProdutos = await fetch('https://fakestoreapi.com/products');
-      const apiProdutos = await resApiProdutos.json();
+      try {
+        const resApiProdutos = await fetch('https://fakestoreapi.com/products');
+        const apiProdutos = await resApiProdutos.json();
 
-      setProdutos(apiProdutos);
+        if (!resApiProdutos.ok) {
+          throw resApiProdutos
+        }
+
+        setProdutos(apiProdutos);
+      } catch (error) {
+        
+        setError({
+          titulo: "Erro",
+          msg: "Ocorreceu um erro inesperado, tente novamente mais tarde!"
+        })
+
+        console.error("Erro no Fetch: ", error)
+
+      }
+
       
     })()
     
@@ -30,12 +47,22 @@ export const Home = () => {
   return (
     <div className='home'>
       <Nav />
-      <img className='home__propaganda' src={propaganda} alt="" />
-      <div className='home__conteiner'>
-        {
-          produtos.map(produto => (<ProdutoCard key={produto.id} produto={produto} />))
-        }
-      </div>
+      {
+        (error !== null) ? (<>
+          <center>
+            <h1>{error.titulo}</h1>
+            <p>{error.msg}</p>
+            <button onClick={()=>{ window.location.reload() }}>Tentar novamente!</button>
+          </center>
+        </>) : (<>
+          <img className='home__propaganda' src={propaganda} alt="" />
+          <div className='home__conteiner'>
+            {
+              produtos.map(produto => (<ProdutoCard key={produto.id} produto={produto} />))
+            }
+          </div>
+        </>)
+      }
       <Footer />
     </div>
   )

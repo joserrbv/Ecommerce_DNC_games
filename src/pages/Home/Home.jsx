@@ -49,9 +49,10 @@ export const Home = () => {
       <Nav />
       {
         (error !== null) ? (<>
-          <center>
+          <center class="tela-erro">
             <h1>{error.titulo}</h1>
             <p>{error.msg}</p>
+            
             <button onClick={()=>{ window.location.reload() }}>Tentar novamente!</button>
           </center>
         </>) : (<>

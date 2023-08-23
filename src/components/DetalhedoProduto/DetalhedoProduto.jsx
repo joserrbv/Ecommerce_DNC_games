@@ -4,14 +4,14 @@ import "./index.scss";
 import carrinhoDir from "../../assets/carrinhoDir.svg";
 import { useForm } from "react-hook-form";
 
-const DetalhedoProduto = ({ dados }) => {
+const DetalhedoProduto = ({ produto }) => {
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (dados) => console.log(dados);
+  const onSubmit = (produto) => console.log(produto);
 
   function clickbtnAddCar() {
 
@@ -21,14 +21,14 @@ const DetalhedoProduto = ({ dados }) => {
 
   }
 
-  console.log(watch("dados")); // watch input value by passing the name of it
-  //   console.log(dados);
+  console.log(watch("produto")); // watch input value by passing the name of it
+  //   console.log(produto);
   return (
     <div className="Detalhedoproduto">
       <div className="Detalhedoproduto_esquerdo">
         <div className="Detalhedoproduto__card">
-          <img id="imagemTopo" src={dados.imagem} alt="" />
-          <p>{dados.nome}</p>
+          <img src={produto?.image} alt="" className="img-produto-detalhes" />
+          <p>{produto?.title}</p>
         </div>
         <div
           className="Detalhedoproduto__descricao, border-bottom"
@@ -36,30 +36,30 @@ const DetalhedoProduto = ({ dados }) => {
         >
           <h2>Descrição</h2>
 
-          <label>{dados.descricao}</label>
+          <label>{produto?.description}</label>
         </div>
       </div>
       <div className="Detalhedoproduto_direito">
         <div className="Detalhedoproduto_direito_nome">
-          <h2 className="border-bottom">{dados.nome}</h2>
+          <h2 className="border-bottom">{produto?.title}</h2>
         </div>
         <div className="preco">
-          <p>{dados.preco}</p>
+          <p>{produto?.price}</p>
         </div>
-        <div className="Detalhedoproduto_direito_cor">
+        {/* <div className="Detalhedoproduto_direito_cor">
           Cor:{" "}
-          {dados.cor.length === 1
-            ? dados.cor.map((cor, index) => <span key={index}>{cor}</span>)
-            : dados.cor.map((cor, index) =>
-                index + 1 === dados.cor.length ? (
+          {produto?.cor?.length === 1
+            ? produto?.cor?.map((cor, index) => <span key={index}>{cor}</span>)
+            : produto?.cor?.map((cor, index) =>
+                index + 1 === produto?.cor?.length ? (
                   <span key={index}>{cor}</span>
                 ) : (
                   <span key={index}>{cor}, </span>
                 )
               )}
-        </div>
-        <div className="Detalhedoproduto__cubocor">
-          {dados.cor.map((cor) => (
+        </div> */}
+        {/* <div className="Detalhedoproduto__cubocor">
+          {produto?.cor?.map((cor) => (
             <div
               style={{
                 width: "40px",
@@ -72,7 +72,7 @@ const DetalhedoProduto = ({ dados }) => {
               {" "}
             </div>
           ))}
-        </div>
+        </div> */}
 
         <button
           id="Detalhedoproduto_direito_button"
@@ -88,12 +88,12 @@ const DetalhedoProduto = ({ dados }) => {
       <div id="modal">
         <div id="modal_content">
           <div className="left">
-            <img src={dados.imagem} alt="" style={{ marginTop: "10%" }} />
+            <img src={produto?.image} className="img-produto-detalhes" style={{ marginTop: "10%" }} />
           </div>
           <div className="right">
             <h2 className="right_titulo"> Meu Carrinho </h2>
 
-            <h1 id="border-bottom">{dados.nome}</h1>
+            <h1 id="border-bottom">{produto?.title}</h1>
             <p
               style={{
                 fontSize: "32px",
@@ -103,13 +103,13 @@ const DetalhedoProduto = ({ dados }) => {
                 fontFamily: "Inter",
               }}
             >
-              {dados.preco}
+              {produto?.preco}
             </p>
 
-            <h5>cor: {dados.cor} </h5>
-
+            {/* <h5>cor: {produto?.cor} </h5> */}
+{/* 
             <div className="Detalhedoproduto__cubocor">
-              {dados.cor.map((cor) => (
+              {produto?.cor?.map((cor) => (
                 <div
                   style={{
                     width: "40px",
@@ -122,10 +122,10 @@ const DetalhedoProduto = ({ dados }) => {
                   {" "}
                 </div>
               ))}
-            </div>
+            </div> */}
             <div className="botoes">
               <button className="botoes_one">
-                <Link to={`/home/`}> Continuar Comprando</Link>
+                <Link to={`/`}> Continuar Comprando</Link>
               </button>
 
               <button

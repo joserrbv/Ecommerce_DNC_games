@@ -57,4 +57,7 @@ Ao final do projeto, foi feito o murge de todas as branchs para a branch master.
 ![o02NCS.jpeg](https://a.imagem.app/o02NCS.jpeg)
 - "Estamos vendo acima a pagina carrinho"
 
+### Acesso a Demontração
+
+https://ecommerce-dnc-games.vercel.app/
 

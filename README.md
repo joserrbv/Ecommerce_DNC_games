@@ -45,3 +45,16 @@ Ao final do projeto, foi feito o murge de todas as branchs para a branch master.
 @joserrbv ( Jose Queiroz)      RID: 62681
 @RodrigoSampaio250 (Rodrigo)   RID: 90185
 @gyok159gui (Guilherme)        RID: 78834
+
+### Imagens
+
+![o02ZKb.jpeg](https://a.imagem.app/o02ZKb.jpeg)
+- "Essa é a Home do projeto"
+
+![o02aQ2.jpeg](https://a.imagem.app/o02aQ2.jpeg)
+- "Estamos vendo acima a pagina detalhes do produto"
+
+![o02NCS.jpeg](https://a.imagem.app/o02NCS.jpeg)
+- "Estamos vendo acima a pagina carrinho"
+
+
